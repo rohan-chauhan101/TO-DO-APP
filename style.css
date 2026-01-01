@@ -51,6 +51,12 @@ select {
     justify-content: flex-end;
 }
 
+.listBox{
+    width: 280px;
+    max-height: 195px;
+    overflow-y: scroll;
+}
+
 /* .mic{
     height: 0px;
     background-color: #9155F0;
@@ -96,6 +102,7 @@ input[type="text"]{
 
 .task{
     display: flex;
+    /* align-items: center; */
     font-size: 2 rem;
     color: black;
     margin-bottom: 5px;
@@ -113,7 +120,10 @@ input[type="text"]{
 input[type="checkbox"]{
     accent-color: green;
     transform: scale(1.5);
-    margin-right: 2px;
+    /* margin-right: 2px; */
+    margin: 4px 2px 0px 2px;
+    height: 18px;
+
 }
 
 input[type="checkbox"]:hover{
@@ -152,5 +162,16 @@ label.text{
     margin-right: 5px;
     padding: 2px;
     border-radius: 4px;
+    height: 19px;
 }
 
+/* For Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+html, body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     /* Firefox */
+}
