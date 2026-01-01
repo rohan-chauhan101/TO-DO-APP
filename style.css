@@ -121,7 +121,7 @@ input[type="checkbox"]{
     accent-color: green;
     transform: scale(1.5);
     /* margin-right: 2px; */
-    margin: 4px 4px 0px 2px;
+    margin: 4px 2px 0px 2px;
     height: 18px;
 
 }
@@ -175,3 +175,4 @@ html, body {
   -ms-overflow-style: none;  
   scrollbar-width: none;     /* Firefox */
 }
+
