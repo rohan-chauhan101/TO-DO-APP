@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ---------------- Add task by button or Enter ---------------- //
-taskButton.addEventListener("click", () => {
+taskButton.addEventListener("click", (e) => {
+    e.preventDefault();
     addtask(input.value);
     input.value = "";
 });
@@ -180,3 +181,4 @@ if (!SpeechRecognition) {
         }
     });
 }
+
